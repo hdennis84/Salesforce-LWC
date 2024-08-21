@@ -1,0 +1,52 @@
+<template>
+    <!--
+// this is the for each loop that iterates over the carList array
+        // each time it renders a div with the car name inside
+        // the div is given a unique key by the id of the car
+        // the for:each loop is used to iterate over an array
+        // the for:item is used to give the current item in the array
+        // a unique key by the id of the car
+        // the class "slds-grid slds-wrap" is used to create a responsive grid of cards
+  <lightning-card title="for:each loop">
+     <div class="slds-var-m-around_medium">
+       //this is the for each item loop
+       // it renders one div for each item in the carList array
+       // the key is used to give each div a unique key
+       // the class "slds-box" is used to create a card
+      <template for:each={carList} for:item="list">
+        //this gets the car by the key and renders the name
+        <ul key={list.id} class="slds-has-dividers_around-space">
+          <li class="slds-item">{list.name}</li>
+        </ul>
+        <div key={car.id}>
+          <p>{car}</p>
+        </div>
+      </template>
+    </div>
+  </lightning-card>
+
+
+<lightning-card title="Iterator loop">
+     <div class="slds-var-m-around_medium">
+        <template iterator:denniscars={cars}>
+            <div key={dennisCars.value.id}>
+              
+            <ul class="slds-has-dividers_around-space">
+
+                <div if:true={denniscars}>
+                    <strong>
+                        This is the list of Dennis' cars
+                    </strong>
+
+                </div>
+          <li class="slds-item">
+            <strong>{denniscars.value.name}</strong>
+          </li>
+        </ul>
+       </div> 
+        
+      </template>
+    </div>
+  </lightning-card>-->
+
+</template>
